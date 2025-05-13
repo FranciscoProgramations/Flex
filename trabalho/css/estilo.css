@@ -1,0 +1,103 @@
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Open Sans", sans-serif;
+            
+        }
+
+        .menu-sticky {
+            position: sticky;
+            top: 0;
+            background-color:#202020;
+            color: whitesmoke;
+            padding: 20px 0;
+            text-align: center;
+            z-index: 1000;
+            height: 60px; 
+        }
+
+        .header-txt{
+            font-size: clamp(20px , 4vw, 1.5em)
+        }
+
+        .menu{
+            background-color: #464343;
+        }
+
+        .menu li{
+            display: inline-flex;
+            flex-wrap: nowrap;
+            font-size: clamp(8px, 14px, 15px)
+        }
+
+        .menu-sticky nav a {
+            color: whitesmoke;
+            text-decoration: none;
+            margin: 0px 15px;
+        }
+
+        .menu-sticky nav a:hover {
+            color: #ffd700;
+        }
+
+
+        .sessao {
+            padding: 25px ;
+            text-align: center;
+            scroll-margin-top: 60px;
+        }
+
+        #recomendados {
+            background-color: #e4e6db;
+        }
+
+        #recomendados img{
+            max-width: 20%;
+            min-width: 12em;
+            height: auto;
+            aspect-ratio: 9 / 16;
+            object-fit: cover;
+        }
+
+         #recomendados img:hover{
+            max-width: 22%;
+            min-width: 13em;
+        }
+
+        #catalogo {
+            background-color: #f2f5e8;
+        }
+
+        .cimg{
+            max-width: 20%;
+            min-width: 12em;
+        }
+        .cimg:hover{
+            max-width: 22%;
+            min-width: 13em;
+        }
+
+        #duvidas {
+            background-color: #e4e6db;
+            text-align: left;
+        }
+
+        #duvidas div p{
+            font-size: 30px;
+        }
+
+        .pergunta {
+            text-decoration:underline;
+        }
+
+        #contato {
+            background-color: #f2f5e8;
+            padding: 25px ;
+            text-align: center;
+            scroll-margin-top: 60px;
+        }
+
+        .footer{
+            font-size: x-small;
+        }
