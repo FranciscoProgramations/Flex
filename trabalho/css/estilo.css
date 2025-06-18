@@ -103,6 +103,7 @@
             .formimg {
                 grid-template-columns: 1fr;
             }
+           
         }
 
         .form fieldset {
@@ -111,8 +112,68 @@
             gap: 5px;
         }
 
-        #contato {
+        #mosaico{
             background-color: #e4e6db;
+
+        }
+        
+        .img1{
+            background-image:url(/trabalho/IMG/crime.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+        .img2{
+            background-image:url(/trabalho/IMG/irmaos.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+        .img3{
+            background-image:url(/trabalho/IMG/memorias.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+        .img4{
+            background-image:url(/trabalho/IMG/noites.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+        .img5{
+            background-image:url(/trabalho/IMG/Num-encercl-34.webp);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+
+
+        .containermosaico{
+            display:grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            grid-template-areas: "img1 img1 img2"
+                                 "img1 img1 img3"
+                                 "img4 img5 img4";
+            width: 70vw;
+            height: 50vh;
+        }
+        @media (width < 700px){
+            
+            .containermosaico{
+                grid-template-columns: 1fr;
+                grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+                grid-template-areas: "img1"
+                                     "img2"
+                                     "img3"
+                                     "img4"
+                                     "img5";
+            }
+        }
+
+        #contato {
+            background-color: #f2f5e8;
             padding: 25px ;
             text-align: center;
             scroll-margin-top: 60px;
