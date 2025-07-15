@@ -28,7 +28,6 @@
         .menu li{
             display: inline-flex;
             flex-wrap: nowrap;
-            font-size: clamp(8px, 14px, 15px)
         }
 
         .menu-sticky nav a {
@@ -91,8 +90,12 @@
             text-decoration:underline;
         }
 
-        .formimg {
+        #form{
             background-color: #f2f5e8;
+            padding: 20px;
+        }
+
+        .formimg {
             display: grid;
             grid-template-columns: 1fr 1fr;
             align-items: center;
@@ -114,64 +117,81 @@
 
         #mosaico{
             background-color: #e4e6db;
-
+            min-height: 700px
         }
+
+        #mosaico h2{
+            padding: 20px;
+        }
+
+      .mosaico {
+        width: 100%;
+        height: 100%;
+        max-width: 70%;
+        margin-inline: auto;
+        }
+
+        .mosaic {
+        display: grid;
+        gap: 1rem;
+        }
+
+        .mosaicobloco {
+        position: relative;
+        border-radius: 4px;
+        overflow: hidden;
+        min-height: 300px;
+        }
+
+        .mosaicobloco img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-image: inherit;
+        }
+
+        .mosaicobloco:hover img {
+        scale: 1.05;
+        }
+
+        .mosaicobloco h3 {
+        position: relative;
+        padding: 1.5rem;
+        font-size: 1.3125rem;
+        font-weight: 500;
+        color: #fff;
+        background: linear-gradient(rgba(0, 0, 0, 0.3) 10%, transparent);
+        user-select: none;
+        }
+
+        .mosaico-layout-5 {
+            grid-template-columns: 2fr 1fr;
+        }
+
+        .mosaico-layout-5 .mosaicobloco {
+        min-height: 300px;
+        }
+
+        .mosaico-layout-5 .mosaicobloco:nth-child(1),
+        .mosaico-layout-5 .mosaicobloco:nth-child(4) {
+        grid-row: span 3;
+        }
+
+        .mosaico-layout-5 .mosaicobloco:nth-child(2),
+        .mosaico-layout-5 .mosaicobloco:nth-child(3),
+        .mosaico-layout-5 .mosaicobloco:nth-child(5) {
+        grid-row: span 2;
+        }
+
+        @media (max-width: 575px) {
+        .mosaic {
+            grid-template-columns: 1fr;
+        }
+        }
+
         
-        .img1{
-            background-image:url(/trabalho/IMG/crime.jpg);
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: center;
-        }
-        .img2{
-            background-image:url(/trabalho/IMG/irmaos.jpg);
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: center;
-        }
-        .img3{
-            background-image:url(/trabalho/IMG/memorias.jpg);
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: center;
-        }
-        .img4{
-            background-image:url(/trabalho/IMG/noites.jpg);
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: center;
-        }
-        .img5{
-            background-image:url(/trabalho/IMG/Num-encercl-34.webp);
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: center;
-        }
-
-
-        .containermosaico{
-            display:grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            grid-template-rows: 1fr 1fr 1fr;
-            grid-template-areas: "img1 img1 img2"
-                                 "img1 img1 img3"
-                                 "img4 img5 img4";
-            width: 70vw;
-            height: 50vh;
-        }
-        @media (width < 700px){
-            
-            .containermosaico{
-                grid-template-columns: 1fr;
-                grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-                grid-template-areas: "img1"
-                                     "img2"
-                                     "img3"
-                                     "img4"
-                                     "img5";
-            }
-        }
-
         #contato {
             background-color: #f2f5e8;
             padding: 25px ;
