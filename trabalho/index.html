@@ -30,8 +30,8 @@
         <div>
             <h1>Bem-vindo à Bookstore 34</h1>
             <p>Estas são as melhores recomendações de nosso catálogo:</p>
-            <img src="IMG/crime.jpg" alt="">
-            <img src="IMG/irmaos.jpg" alt="">
+            <img src="IMG/crime.webp" alt="">
+            <img src="IMG/irmaos.webp" alt="">
         </div>
     </section>
 
@@ -39,10 +39,10 @@
         <div>
             <h2>Catálogo completo:</h2>
             <p>Encontre o livro que lhe interessa</p>
-            <img class="cimg" src="IMG/crime.jpg" alt="">
-            <img class="cimg" src="IMG/irmaos.jpg" alt="">
-            <img class="cimg" src="IMG/memorias.jpg" alt="">
-            <img class="cimg" src="IMG/noites.jpg" alt="">
+            <img class="cimg" src="IMG/crime.webp" alt="">
+            <img class="cimg" src="IMG/irmaos.webp" alt="">
+            <img class="cimg" src="IMG/memorias.webp" alt="">
+            <img class="cimg" src="IMG/noites.webp" alt="">
         </div>
     </section>
 
@@ -63,10 +63,10 @@
     </section>
 
     <section id="form">
+        <h2>Dados para contato:</h2>
         <div class="formimg">
             <form class="form">
                 <fieldset>
-                    <legend>Dados:</legend>
                     <label for="n1">Nome:</label>
                     <input type="text" id="n1">
                     <label for="s1">Senha:</label>
@@ -82,24 +82,49 @@
             </form>
             <div class="fimg">
                 <picture>
-                    <source srcset="IMG/Num-encercl-34.webp" media="(width > 800px)">
-                    <img src="IMG/Totenkopf_2.webp" alt="">
+                    <source srcset="IMG/34.webp" media="(max-width: 576px)">
+                    <source srcset="IMG/34large.webp" media="(min-width: 991.99px)">
+                    <source srcset="IMG/34medium" media="(min-width: 992px)">
+                    <img src="IMG/34medium.webp" alt="" width="400px" loading="lazy">
                 </picture>
             </div>
         </div>
     </section>
 
-    <section id="mosaico">
-        <div class="mosaico">
-            <div class="containermosaico">
-                <div class="img1"></div>
-                <div class="img2"></div>
-                <div class="img3"></div>
-                <div class="img4"></div>
-                <div class="img5"></div>
+    
+    
+  <section id="mosaico">
+    <h2>Colaboradores:</h2>
+    <div class="mosaico">
+        <div class="mosaic mosaico-layout-5">
+            <div class="mosaicobloco">
+                <img src="IMG/Miguel.webp">
+                <h3>Miguel Rodrigues</h3>
+            </div>
+
+            <div class="mosaicobloco">
+                <img src="IMG/Untitled.webp">
+                <h3>Alexandre Mesas</h3>
+            </div>
+
+            <div class="mosaicobloco">
+                <img src="IMG/Eduardo.webp">
+                <h3>Eduardo Altamor</h3>
+            </div>
+
+            <div class="mosaicobloco">
+                <img src="IMG/GuilhermeRafael.webp">
+                <h3>Guilherme e Rafael Negalho</h3>
+            </div>
+
+            <div class="mosaicobloco">
+                <img src="IMG/Luan.webp">
+                <h3>Luan Penha</h3>
             </div>
         </div>
-    </section>
+    </div>
+  </section>
+
     
 
     <section id="contato" class="footer">
